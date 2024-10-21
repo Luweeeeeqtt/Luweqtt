@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Fur Haven Animal Care</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap;
+        }
+        nav a {
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+        .service {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .service img {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .service-description {
+            flex: 1;
+        }
+        .service-description h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        .service-description p {
+            font-size: 1em;
+            color: #777;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .service {
+                flex-direction: column;
+                text-align: center;
+            }
+            .service img {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Fur Haven Dog Shop - Services</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Grooming Service -->
+        <div class="section">
+            <div class="service">
+                <img src="grooming.jfif" alt="Dog Grooming">
+                <div class="service-description">
+                    <h3>Grooming</h3>
+                    <p>Keep your dog looking and feeling their best with our professional grooming services. We offer baths, haircuts, nail trimming, and ear cleaning to keep your pet clean and healthy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Training Service -->
+        <div class="section">
+            <div class="service">
+                <img src="training.jfif" alt="Dog Training">
+                <div class="service-description">
+                    <h3>Training</h3>
+                    <p>Our experienced trainers offer obedience training, behavioral modification, and fun agility courses to help your dog learn new skills and follow commands effectively.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Veterinary Service -->
+        <div class="section">
+            <div class="service">
+                <img src="veterinary.jfif" alt="Veterinary Care">
+                <div class="service-description">
+                    <h3>Veterinary Care</h3>
+                    <p>We provide comprehensive veterinary services, including regular check-ups, vaccinations, dental care, and emergency services to keep your dog healthy and happy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daycare and Boarding Service -->
+        <div class="section">
+            <div class="service">
+                <img src="daycare.jfif" alt="Dog Daycare">
+                <div class="service-description">
+                    <h3>Daycare & Boarding</h3>
+                    <p>Our daycare and boarding facilities offer a safe and comfortable environment for your dog while you’re away. Your pet will enjoy playtime, socialization, and quality care from our trained staff.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fur Haven Animal Care. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

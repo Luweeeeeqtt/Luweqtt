@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Fur Haven Animal Care</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap;
+        }
+        nav a {
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+        .contact-details {
+            text-align: center;
+        }
+        .contact-details p {
+            font-size: 1.1em;
+            color: #777;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        .map {
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .contact-form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Contact Fur Haven Dog Shop</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Contact Details Section -->
+        <div class="section contact-details">
+            <h2>Get In Touch</h2>
+            <p>Email: ciaraalexis@furhaven.com</p>
+            <p>Phone: +63 (999) 359 2734</p>
+            <p>Address: 1st Street Plaridel 2, Angeles City, Pampanga, Philippines</p>
+            <p>Opening Hours: Monday - Friday: 8 AM - 6 PM | Saturday: 9 AM - 5 PM | Sunday: Closed</p>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="section">
+            <h2>Contact Form</h2>
+            <form class="contact-form" action="submit_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Map Section -->
+        <div class="section map">
+            <h2>Find Us</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.472661589648!2d120.58850021441363!3d15.14498489038739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f1c54f38c45d%3A0xd3f4b47c0a15bfc!2sAngeles%20City%2C%20Pampanga%2C%20Philippines!5e0!3m2!1sen!2sus!4v1697819400000" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fur Haven Animal Care. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

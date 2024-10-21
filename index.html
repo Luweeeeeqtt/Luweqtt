@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Fur Haven Animal Care</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap;
+        }
+        nav a {
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .hero {
+            background-image: url('shih.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .featured-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 1em;
+            color: #777;
+        }
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .featured-products {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product {
+                width: 80%;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .product {
+                width: 90%;
+                padding: 15px;
+            }
+            .hero h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Fur Haven Dog Shop</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Your One-Stop Shop for All Things Dog</h2>
+        <p>Quality products and services to keep your furry friend happy and healthy.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- About Section -->
+        <div class="section">
+            <h2>About Fur Haven</h2>
+            <p>At Fur Haven Dog Shop, we believe in providing the best for your pet. We offer a wide range of quality dog products, from nutritious food to comfortable beds and fun toys. Our services ensure your pet is well cared for, whether it’s grooming, training, or veterinary check-ups.</p>
+        </div>
+
+        <!-- Featured Products Section -->
+        <div class="section">
+            <h2>Featured Products</h2>
+            <div class="featured-products">
+
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="dog.avif" alt="Dog Food">
+                    <h3>Premium Dog Food</h3>
+                    <p>High-quality dog food packed with essential nutrients for your dog's health.</p>
+                    <p><strong>$29.99</strong></p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img src="toys.webp" alt="Dog Toy">
+                    <h3>Chew Toy</h3>
+                    <p>Durable chew toy designed to keep your dog entertained for hours.</p>
+                    <p><strong>$2.99</strong></p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product">
+                    <img src="bed.avif" alt="Dog Bed">
+                    <h3>Comfortable Dog Bed</h3>
+                    <p>Soft and cozy dog bed, perfect for restful naps and long sleep.</p>
+                    <p><strong>$25.99</strong></p>
+                    <button>Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="section">
+            <h2>Our Services</h2>
+            <p>We offer a variety of services to help you take the best care of your dog:</p>
+            <ul>
+                <li>Grooming</li>
+                <li>Training</li>
+                <li>Veterinary Services</li>
+                <li>Daycare and Boarding</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fur Haven Animal Care. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
